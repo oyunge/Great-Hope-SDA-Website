@@ -202,24 +202,28 @@
                 <div class="col-12">
                     <!-- Contact Form Area -->
                     <div class="contact-form-area">
-                        <form action="#" method="post">
+
+
+                        <form action="/contacts" method="post">
+                            {{ csrf_field() }}
+
                             <div class="row">
                                 <div class="col-12 col-lg-4">
                                     <div class="form-group">
                                         <label for="contact-name">Full Name*:</label>
-                                        <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                                        <input type="text" class="form-control" id="Fullname" name="Fullname"  placeholder="Full Name">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
                                     <div class="form-group">
                                         <label for="contact-email">Email*:</label>
-                                        <input type="email" class="form-control" id="contact-email" placeholder="info.deercreative@gmail.com">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="info.deercreative@gmail.com">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4">
                                     <div class="form-group">
                                         <label for="contact-number">Phone*:</label>
-                                        <input type="text" class="form-control" id="contact-number" placeholder="(+12) 123 456 7910">
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="(+12) 123 456 7910">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -229,7 +233,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button type="submit" class="btn crose-btn mt-15">Submit Now</button>
+                                    <input type="submit" class="btn crose-btn mt-15" value="" >Submit Now</input>
                                 </div>
                             </div>
                         </form>

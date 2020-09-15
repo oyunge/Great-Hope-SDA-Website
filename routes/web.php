@@ -28,3 +28,8 @@ Route::get('/sermons', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+
+
+Route::post('/contacts', [\App\Http\Controllers\ContactController::class,'postContact']);
+
