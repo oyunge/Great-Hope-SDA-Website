@@ -28,8 +28,14 @@ Route::get('/sermons', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-
-
+Route::get('/create', function () {
+    return view('createEvent');
+});
+Route::get('/createSermon', function () {
+    return view('createSermons');
+});
 
 Route::post('/contacts', [\App\Http\Controllers\ContactController::class,'postContact']);
-
+Route::post('/events', [\App\Http\Controllers\EventsController::class,'store']);
+Route::post('/index', [\App\Http\Controllers\EventsController::class,'index']);
+Route::post('/sermons', [\App\Http\Controllers\SermonsController ::class,'store']);

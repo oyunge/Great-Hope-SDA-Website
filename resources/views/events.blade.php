@@ -180,11 +180,13 @@
                 <!-- Events Title -->
                 <div class="col-12">
                     <div class="events-title">
-                        <h2>Events In March 2018</h2>
+                        <h2>Events In March 2020</h2>
                     </div>
                 </div>
 
                 <div class="col-12">
+                   
+                    <?php foreach ($events as $event){ ?>
                     <!-- Single Upcoming Events Area -->
                     <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
                         <!-- Thumbnail -->
@@ -194,13 +196,13 @@
                         <!-- Content -->
                         <div class="upcoming-events-content d-flex flex-wrap align-items-center">
                             <div class="events-text">
-                                <h4>Seeing and Savoring Jesus Christ</h4>
+                                <h4><?php echo $event['title']; ?></h4>
                                 <div class="events-meta">
                                     <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 01, 2018</a>
-                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 09:00 - 11:00</a>
-                                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 11 Rose St, Brooklyn, NY</a>
+                                    {{-- <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> <small>{{$event ->created_at}} </small></a> --}}
+                                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $event['location']; ?></a>
                                 </div>
-                                <p>Join us for an informational webinar about the U.S.-Japan COIL Initiative. Learn about the initiative and receive general guidance.</p>
+                                <p><?php echo $event['message']; ?></p>
                                 <a href="#">Read More <i class="fa fa-angle-double-right"></i></a>
                             </div>
                             <div class="find-out-more-btn">
@@ -209,8 +211,9 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12">
+                <?php } ?>
+       
+                {{-- <div class="col-12">
                     <!-- Single Upcoming Events Area -->
                     <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
                         <!-- Thumbnail -->
@@ -234,9 +237,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="col-12">
+                {{-- <div class="col-12">
                     <!-- Single Upcoming Events Area -->
                     <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
                         <!-- Thumbnail -->
@@ -260,9 +263,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="col-12">
+                {{-- <div class="col-12">
                     <!-- Single Upcoming Events Area -->
                     <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
                         <!-- Thumbnail -->
@@ -286,9 +289,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="col-12">
+                {{-- <div class="col-12">
                     <!-- Single Upcoming Events Area -->
                     <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
                         <!-- Thumbnail -->
@@ -312,7 +315,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <div class="col-12">
                     <div class="pagination-area mt-70">

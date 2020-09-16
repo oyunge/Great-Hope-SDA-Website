@@ -233,7 +233,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <input type="submit" class="btn crose-btn mt-15" value="" >Submit Now</input>
+                                    <button type="submit" class="btn crose-btn mt-15" value="" >Submit Now</button>
                                 </div>
                             </div>
                         </form>
