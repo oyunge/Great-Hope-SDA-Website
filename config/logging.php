@@ -16,6 +16,11 @@ return [
     | one of the channels defined in the "channels" configuration array.
     |
     */
+    'stack' => [
+        'driver' => 'stack',
+        'channels' => ['daily', 'flare'],
+        'ignore_exceptions' => false,
+    ],
 
     'default' => env('LOG_CHANNEL', 'stack'),
 
@@ -39,6 +44,9 @@ return [
             'driver' => 'stack',
             'channels' => ['single'],
             'ignore_exceptions' => false,
+            // flare notification of err
+            'channels' => ['daily', 'flare'],
+             'ignore_exceptions' => false,
         ],
 
         'single' => [
@@ -98,6 +106,9 @@ return [
 
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
+        ],
+        'flare' => [
+            'driver' => 'flare',
         ],
     ],
 

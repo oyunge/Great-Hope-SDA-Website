@@ -17,9 +17,16 @@ class EventsController extends Controller
      */
     public function index()
     {
-        // $events = Event::all();
-        $events = DB::select('SELECT * FROM Events');
-    return view('events') -> with('events' , $events);
+       
+        $events = Event::all();
+        
+        return view('events',['events'=>$events] );
+        // $events = DB::select('SELECT * FROM events');
+   
+   
+    // return view('events', compact('events'));
+   
+       
     }
 
     /**

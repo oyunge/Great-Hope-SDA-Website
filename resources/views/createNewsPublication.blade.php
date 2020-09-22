@@ -8,27 +8,34 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </head>
     <body>
-        <form action="/sermon" method="post">
+        <div class="container">
+        <form action="/newsPublication" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
 
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <div class="form-group">
-                        <label for="title">Sermon Title</label>
-                        <input type="text" class="form-control" id="title" name="title"  placeholder="Sermon Title">
+                        
+                        <input type="file" class="form-control" id="file" name="cover_image"  placeholder="">
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="form-group">
-                        <label for="sermonFrom">Sermon From</label>
-                        <input type="text" class="form-control" id="sermonFrom" name="sermonFrom" placeholder="sermonFrom">
+                        <label for="title">News Title</label>
+                        <input type="text" class="form-control" id="title" name="title"  placeholder="News Title">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="form-group">
+                        <label for="messageFrom">Message From</label>
+                        <input type="text" class="form-control" id="messageFrom" name="messageFrom" placeholder="Message From">
                     </div>
                 </div>
               
                 <div class="col-12">
                     <div class="form-group">
-                        <label for="categories">Categories</label>
-                        <textarea class="form-control" name="categories" id="categories" cols="30" rows="10" placeholder="categories"></textarea>
+                        <label for="message">Message</label>
+                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                     </div>
                 </div>
                 <div class="col-12 text-center">
@@ -36,6 +43,6 @@
                 </div>
             </div>
         </form>
-
+        </div>
     </body>
 </html>

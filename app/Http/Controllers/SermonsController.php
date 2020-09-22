@@ -16,7 +16,9 @@ class SermonsController extends Controller
      */
     public function index()
     {
-        //
+        $sermons = Sermon::all();
+        
+        return view('sermons',['sermons'=>$sermons] );
     }
 
     /**
@@ -26,7 +28,7 @@ class SermonsController extends Controller
      */
     public function create()
     {
-        //
+    
     }
 
     /**
@@ -64,7 +66,7 @@ class SermonsController extends Controller
 
             if ( $sermon->save()) {
 
-                return view("sermons");
+              return redirect ("sermons");
 
             }
 

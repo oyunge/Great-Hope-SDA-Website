@@ -25,37 +25,9 @@
         <!-- Line -->
         <div class="line-preloader"></div>
     </div>
-
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
-
-        <!-- ***** Top Header Area ***** -->
-        <div class="top-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="top-header-content d-flex flex-wrap align-items-center justify-content-between">
-                            <!-- Top Header Meta -->
-                            <div class="top-header-meta d-flex flex-wrap">
-                                <a href="#" class="open" data-toggle="tooltip" data-placement="bottom" title="10 Am to 6 PM"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>Opening Hours - 10 Am to 6 PM</span></a>
-                                <!-- Social Info -->
-                                <div class="top-social-info">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <!-- Top Header Meta -->
-                            <div class="top-header-meta">
-                                <a href="mailto:info.deercreative@gmail.com" class="email-address"><i class="fa fa-envelope" aria-hidden="true"></i> <span>info.deercreative@gmail.com</span></a>
-                                <a href="#" class="phone"><i class="fa fa-phone" aria-hidden="true"></i> <span>+12 345 678 910</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ***** Top Header Area ***** -->
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+   
 
         <!-- ***** Navbar Area ***** -->
         <div class="crose-main-menu">
@@ -84,7 +56,8 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="/">Home</a></li>
-                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/departments">Departments</a></li>
                                     <li><a href="/events">Events</a></li>
                                     <li><a href="/sermons">Sermons</a></li>
 
@@ -144,12 +117,13 @@
     <!-- ##### Breadcrumb Area End ##### -->
 
     <!-- ##### About Us Area Start ##### -->
+    <div class="container">
     <div class="about-us-area about-page section-padding-100">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-12 col-lg-5">
                     <div class="about-content">
-                        <h2>Welcome To Crose</h2>
+                        <h2>Welcome To Syokimau Central SDA</h2>
                         <p>It’s very important to believe that you’re the one. We aim to take a different approach in reaching out and helping people along the journey. We stress cultural relevancy and utilize all medias and means to communicate the church
                             message. It’s very important to believe that you’re the one.</p>
                         <div class="opening-hours-location mt-30 d-flex align-items-center">
@@ -175,65 +149,27 @@
         </div>
     </div>
     <!-- ##### About Us Area End ##### -->
-
-    <!-- ##### Call To Action Area Start ##### -->
-    <section class="call-to-action-area section-padding-100 bg-img bg-overlay" style="background-image: url(img/bg-img/6.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="call-to-action-content text-center">
-                        <h6>A Place For You</h6>
-                        <h2>Find a place to connect and grow through a small group, class, or regular gathering.</h2>
-                        <a href="#" class="btn crose-btn btn-2">Become A Member</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Call To Action Area End ##### -->
-
-    <!-- ##### Why Choose Us Area Start ##### -->
-    <div class="why-choose-us bg-gray section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <!-- Section Heading -->
-                <div class="col-12">
-                    <div class="section-heading">
-                        <h2>Why Choose Us</h2>
-                        <p>Loaded with fast-paced worship, activities, and video teachings to address real issues that students face each day</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <!-- Single Why Choose Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-why-choose-us mb-100">
-                        <img src="img/core-img/why1.png" alt="">
-                        <h4>Committed Cohorts</h4>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                    </div>
-                </div>
-                <!-- Single Why Choose Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-why-choose-us mb-100">
-                        <img src="img/core-img/why2.png" alt="">
-                        <h4>Trained Facilitators</h4>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                    </div>
-                </div>
-                <!-- Single Why Choose Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="single-why-choose-us mb-100">
-                        <img src="img/core-img/why3.png" alt="">
-                        <h4>Access to Leading Voices</h4>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                    </div>
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center">Our History</h2>
+            <hr class="my-4">
         </div>
     </div>
-    <!-- ##### Why Choose Us Area End ##### -->
+    <div class="row">
+        <div class="col-md-12">
+            <p style="text-align: justify">Cornerstone Church finds its roots back in 2007 when a few of the University of Nairobi SDA group members who had cleared campus, and were living within Thiong’o road decided to be meeting for Friday Vespers in their houses. Within a short time, word went round among the associates living along Waiyaki way, especially Uthiru and Cooperation who started joining the Thiongo group for Friday Vespers. By 2008, the group had grown and at least 20 members were meeting every Friday. In addition to worship, these members started a welfare kitty towards the needy in the society. All these time, the members would only meet on Friday then proceed to their churches of choice on Sabbath. By the close of the year, the members saw it was wise to begin a worship facility within the area to address the following among others:
+
+                Have a place of worship within their area of residence to avoid many movements on Sabbath.
+                Establish an English speaking church along the Swahili dominated Waiyaki way.
+                Instill responsible Christianity to members who otherwise were guests in churches all year round.
+                Evangelize the area around Mountain View estate/Thiong’o road and provide for them a worship facility within reach.
+                Address special needs which the university church could not offer to its associate members</p>
+            
+        </div>
+    </div>
+    
+
+
 
     <!-- ##### Team Members Area Start ##### -->
     <div class="team-members-area section-padding-100-0">
@@ -242,7 +178,7 @@
                 <!-- Section Heading -->
                 <div class="col-12">
                     <div class="section-heading">
-                        <h2>Staff members</h2>
+                        <h2>Pastoral Team</h2>
                         <p>A brief overview of what you can expect at our worship experiences.</p>
                     </div>
                 </div>
@@ -314,6 +250,7 @@
     <!-- ##### Team Members Area End ##### -->
 
     <!-- ##### Subscribe Area Start ##### -->
+</div>
     <section class="subscribe-area">
         <div class="container">
             <div class="row align-items-center">
@@ -338,13 +275,12 @@
     </section>
     <!-- ##### Subscribe Area End ##### -->
 
-    <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container">
                 <div class="row">
-
+    
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-70">
@@ -352,7 +288,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-
+    
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-70">
@@ -360,57 +296,58 @@
                             <nav class="footer-menu">
                                 <ul>
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Event</a></li>
+                                    
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Event</a></li>
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Gallery</a></li>
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sermons</a></li>
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Blogs</a></li>
+                                  
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Donate</a></li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
-
+    
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-70">
                             <h5 class="widget-title">News Latest</h5>
-
+    
                             <!-- Single Latest News -->
                             <div class="single-latest-news">
-                                <a href="#">Polish schools in UK warned</a>
+                                <a href="#">Adventist Church leaders vote One Humanity statement</a>
                                 <p><i class="fa fa-calendar" aria-hidden="true"></i> November 11, 2017</p>
                             </div>
-
+    
                             <!-- Single Latest News -->
                             <div class="single-latest-news">
-                                <a href="#">University league tables 2018</a>
+                                <a href="#">Adventist Eductation Is Alive And Well</a>
                                 <p><i class="fa fa-calendar" aria-hidden="true"></i> November 11, 2017</p>
                             </div>
-
+    
                         </div>
                     </div>
-
+    
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-70">
                             <h5 class="widget-title">Contact Us</h5>
-
+    
                             <div class="contact-information">
-                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 40 Baria Sreet, NewYork City, US</p>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 40 Tom Mboya Sreet, Nairobi City, Kenya</p>
                                 <a href="callto:001-1234-88888"><i class="fa fa-phone" aria-hidden="true"></i> 001-1234-88888</a>
-                                <a href="mailto:info.deercreative@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> info.deercreative@gmail.com</a>
+                                <a href="mailto:info.deercreative@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> info.edwinoyunge@gmail.com</a>
                                 <p><i class="fa fa-clock-o" aria-hidden="true"></i> Mon - Fri: 08.00am - 18.00pm</p>
                             </div>
-
+    
                         </div>
                     </div>
-
+    
                 </div>
             </div>
         </div>
-
+    
         <!-- Copwrite Area -->
         <div class="copywrite-area">
             <div class="container h-100">
@@ -423,12 +360,12 @@
                                 Copyright &copy;
                                 <script>
                                     document.write(new Date().getFullYear());
-                                </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                </script> Syokimau Central SDA|All rights reserved 
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
                         </div>
                     </div>
-
+    
                     <!-- Footer Social Icon -->
                     <div class="col-12 col-md-6">
                         <div class="footer-social-icon">
@@ -442,6 +379,7 @@
             </div>
         </div>
     </footer>
+    <!-- ##### Footer Area End ##### -->
     <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->

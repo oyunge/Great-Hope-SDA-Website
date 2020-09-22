@@ -25,37 +25,9 @@
         <!-- Line -->
         <div class="line-preloader"></div>
     </div>
-
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
-
-        <!-- ***** Top Header Area ***** -->
-        <div class="top-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="top-header-content d-flex flex-wrap align-items-center justify-content-between">
-                            <!-- Top Header Meta -->
-                            <div class="top-header-meta d-flex flex-wrap">
-                                <a href="#" class="open" data-toggle="tooltip" data-placement="bottom" title="10 Am to 6 PM"><i class="fa fa-clock-o" aria-hidden="true"></i> <span>Opening Hours - 10 Am to 6 PM</span></a>
-                                <!-- Social Info -->
-                                <div class="top-social-info">
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                            <!-- Top Header Meta -->
-                            <div class="top-header-meta">
-                                <a href="mailto:info.deercreative@gmail.com" class="email-address"><i class="fa fa-envelope" aria-hidden="true"></i> <span>info.deercreative@gmail.com</span></a>
-                                <a href="#" class="phone"><i class="fa fa-phone" aria-hidden="true"></i> <span>+12 345 678 910</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ***** Top Header Area ***** -->
+<!-- ##### Header Area Start ##### -->
+<header class="header-area">
+  
 
         <!-- ***** Navbar Area ***** -->
         <div class="crose-main-menu">
@@ -85,6 +57,7 @@
                                 <ul>
                                     <li><a href="/">Home</a></li>
                                     <li><a href="/about">About</a></li>
+                                    <li><a href="/departments">Departments</a></li>
                                     <li><a href="/events">Events</a></li>
                                     <li><a href="/sermons">Sermons</a></li>
                                     <li><a href="/contact">Contact</a></li>
@@ -198,8 +171,8 @@
                             <div class="events-text">
                                 <h4><?php echo $event['title']; ?></h4>
                                 <div class="events-meta">
-                                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 01, 2018</a>
-                                    {{-- <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> <small>{{$event ->created_at}} </small></a> --}}
+                                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> {{$event ->created_at}}</a>
+                                    {{-- <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> <small>{{$event ->updated_at}} </small></a> --}}
                                     <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $event['location']; ?></a>
                                 </div>
                                 <p><?php echo $event['message']; ?></p>
@@ -213,109 +186,8 @@
                 </div>
                 <?php } ?>
        
-                {{-- <div class="col-12">
-                    <!-- Single Upcoming Events Area -->
-                    <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
-                        <!-- Thumbnail -->
-                        <div class="upcoming-events-thumbnail">
-                            <img src="img/bg-img/24.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="upcoming-events-content d-flex flex-wrap align-items-center">
-                            <div class="events-text">
-                                <h4>A God-Entranced Vision of All Things</h4>
-                                <div class="events-meta">
-                                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 01, 2018</a>
-                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 09:00 - 11:00</a>
-                                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 11 Rose St, Brooklyn, NY</a>
-                                </div>
-                                <p>Join us for an informational webinar about the U.S.-Japan COIL Initiative. Learn about the initiative and receive general guidance.</p>
-                                <a href="#">Read More <i class="fa fa-angle-double-right"></i></a>
-                            </div>
-                            <div class="find-out-more-btn">
-                                <a href="#" class="btn crose-btn btn-2">Find Out More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-
-                {{-- <div class="col-12">
-                    <!-- Single Upcoming Events Area -->
-                    <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
-                        <!-- Thumbnail -->
-                        <div class="upcoming-events-thumbnail">
-                            <img src="img/bg-img/25.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="upcoming-events-content d-flex flex-wrap align-items-center">
-                            <div class="events-text">
-                                <h4>Speaker Interviews with J.Doe</h4>
-                                <div class="events-meta">
-                                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 01, 2018</a>
-                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 09:00 - 11:00</a>
-                                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 11 Rose St, Brooklyn, NY</a>
-                                </div>
-                                <p>Join us for an informational webinar about the U.S.-Japan COIL Initiative. Learn about the initiative and receive general guidance.</p>
-                                <a href="#">Read More <i class="fa fa-angle-double-right"></i></a>
-                            </div>
-                            <div class="find-out-more-btn">
-                                <a href="#" class="btn crose-btn btn-2">Find Out More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-
-                {{-- <div class="col-12">
-                    <!-- Single Upcoming Events Area -->
-                    <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
-                        <!-- Thumbnail -->
-                        <div class="upcoming-events-thumbnail">
-                            <img src="img/bg-img/23.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="upcoming-events-content d-flex flex-wrap align-items-center">
-                            <div class="events-text">
-                                <h4>Mexican priest murdered in his church</h4>
-                                <div class="events-meta">
-                                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 01, 2018</a>
-                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 09:00 - 11:00</a>
-                                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 11 Rose St, Brooklyn, NY</a>
-                                </div>
-                                <p>Join us for an informational webinar about the U.S.-Japan COIL Initiative. Learn about the initiative and receive general guidance.</p>
-                                <a href="#">Read More <i class="fa fa-angle-double-right"></i></a>
-                            </div>
-                            <div class="find-out-more-btn">
-                                <a href="#" class="btn crose-btn btn-2">Find Out More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-
-                {{-- <div class="col-12">
-                    <!-- Single Upcoming Events Area -->
-                    <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
-                        <!-- Thumbnail -->
-                        <div class="upcoming-events-thumbnail">
-                            <img src="img/bg-img/24.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="upcoming-events-content d-flex flex-wrap align-items-center">
-                            <div class="events-text">
-                                <h4>A God-Entranced Vision of All Things</h4>
-                                <div class="events-meta">
-                                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> March 01, 2018</a>
-                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 09:00 - 11:00</a>
-                                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> 11 Rose St, Brooklyn, NY</a>
-                                </div>
-                                <p>Join us for an informational webinar about the U.S.-Japan COIL Initiative. Learn about the initiative and receive general guidance.</p>
-                                <a href="#">Read More <i class="fa fa-angle-double-right"></i></a>
-                            </div>
-                            <div class="find-out-more-btn">
-                                <a href="#" class="btn crose-btn btn-2">Find Out More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
+              
+            
 
                 <div class="col-12">
                     <div class="pagination-area mt-70">
@@ -359,13 +231,12 @@
     </section>
     <!-- ##### Subscribe Area End ##### -->
 
-    <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container">
                 <div class="row">
-
+    
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-70">
@@ -373,7 +244,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-
+    
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-70">
@@ -381,57 +252,58 @@
                             <nav class="footer-menu">
                                 <ul>
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Event</a></li>
+                                    
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Event</a></li>
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Gallery</a></li>
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sermons</a></li>
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Blogs</a></li>
+                                  
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Donate</a></li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
-
+    
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-70">
                             <h5 class="widget-title">News Latest</h5>
-
+    
                             <!-- Single Latest News -->
                             <div class="single-latest-news">
-                                <a href="#">Polish schools in UK warned</a>
+                                <a href="#">Adventist Church leaders vote One Humanity statement</a>
                                 <p><i class="fa fa-calendar" aria-hidden="true"></i> November 11, 2017</p>
                             </div>
-
+    
                             <!-- Single Latest News -->
                             <div class="single-latest-news">
-                                <a href="#">University league tables 2018</a>
+                                <a href="#">Adventist Eductation Is Alive And Well</a>
                                 <p><i class="fa fa-calendar" aria-hidden="true"></i> November 11, 2017</p>
                             </div>
-
+    
                         </div>
                     </div>
-
+    
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-70">
                             <h5 class="widget-title">Contact Us</h5>
-
+    
                             <div class="contact-information">
-                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 40 Baria Sreet, NewYork City, US</p>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 40 Tom Mboya Sreet, Nairobi City, Kenya</p>
                                 <a href="callto:001-1234-88888"><i class="fa fa-phone" aria-hidden="true"></i> 001-1234-88888</a>
-                                <a href="mailto:info.deercreative@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> info.deercreative@gmail.com</a>
+                                <a href="mailto:info.deercreative@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> info.edwinoyunge@gmail.com</a>
                                 <p><i class="fa fa-clock-o" aria-hidden="true"></i> Mon - Fri: 08.00am - 18.00pm</p>
                             </div>
-
+    
                         </div>
                     </div>
-
+    
                 </div>
             </div>
         </div>
-
+    
         <!-- Copwrite Area -->
         <div class="copywrite-area">
             <div class="container h-100">
@@ -444,12 +316,12 @@
                                 Copyright &copy;
                                 <script>
                                     document.write(new Date().getFullYear());
-                                </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                </script> Syokimau Central SDA|All rights reserved 
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
                         </div>
                     </div>
-
+    
                     <!-- Footer Social Icon -->
                     <div class="col-12 col-md-6">
                         <div class="footer-social-icon">
