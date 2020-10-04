@@ -197,7 +197,7 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-latest-sermons mb-100">
                         <div class="sermons-thumbnail">
-                            <img src="img/bg-img/7.jpg" alt="">
+                            <img src="/storage/cover_images/{{$sermon->cover_image}}" alt="" class="img-fluid">
                             <!-- Date -->
                             <div class="sermons-date">
                                 <h6><span>10</span>MAR</h6>

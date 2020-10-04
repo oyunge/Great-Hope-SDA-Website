@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\Sermon;
+use App\Models\AboutUs;
 use Dotenv\Validator;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
-class SermonsController extends Controller
+use DB;
+class AboutUsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +17,8 @@ class SermonsController extends Controller
      */
     public function index()
     {
-        $sermons = Sermon::all();
-        
-        return view('sermons',['sermons'=>$sermons] );
+        $contents = AboutUs::all();
+        return view ('about',['contents'=> $contents]);
     }
 
     /**
@@ -28,7 +28,7 @@ class SermonsController extends Controller
      */
     public function create()
     {
-    
+        //
     }
 
     /**
@@ -37,17 +37,17 @@ class SermonsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-   
     public function store(Request $request)
     {
         $this -> validate($request,[
+            'title'=> 'required',
+            'about' => 'required',
             // nullable means optional is not necessary a user to upload an image
            'cover_image' => 'image|nullable|max:1999',
-           "title" => "required",
-           "sermonFrom" => "required",
-            "categories" => "required",
+           'name' => 'required',
+           'position'  => 'required'
            ]);
-       //handle file upload
+           //handle file upload
        if($request->hasFile('cover_image')){
         //Get filename with the extension
         $filenameWithExt = $request->file('cover_image')->getClientOriginalName();
@@ -62,49 +62,18 @@ class SermonsController extends Controller
         } else{
         $fileNameToStore = 'noimage.jpg';
     }
-           //create post
-           $sermon = new Sermon;
-           $sermon->cover_image = $fileNameToStore;
-           $sermon->title = $request->input('title');
-           $sermon->sermonFrom = $request->input('sermonFrom');
-           $sermon->categories = $request->input('categories');
-           $sermon->save();
-           return redirect('sermons');
-      
-}
-        // $rules = [
-           
-        //     "title" => "required",
-        //     "sermonFrom" => "required",
-        //     "categories" => "required",
-            
-        // ];
+        //create post
+        $content = new AboutUs;
+        $content->title = $request->input('title');
+        $content->about = $request->input('about');
+        $content->cover_image = $fileNameToStore;
+        $content->name = $request->input('name');
+        $content->position = $request->input('position');
+        $content->save();
+        return redirect('about');
+     
+    }
 
-        // $validation = $request->validate($rules);
-
-        // if (!$validation) {
-
-        //     return route("index");
-
-        // } else {
-
-
-    //         $sermon = new Sermon();
-    //         $sermon->title = $request->title;
-    //         $sermon->sermonFrom = $request->sermonFrom;
-    //         $sermon->categories = $request->categories;
-           
-
-    //         if ( $sermon->save()) {
-
-    //           return redirect ("sermons");
-
-    //         }
-
-
-    //     }
-
-    // }
     /**
      * Display the specified resource.
      *

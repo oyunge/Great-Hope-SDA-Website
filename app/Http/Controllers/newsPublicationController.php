@@ -18,7 +18,7 @@ class newsPublicationController extends Controller
     public function index()
     {
     $newsPublcations = newsPublcation::all();
-    return view('index' ,compact("$newsPublcation"));
+    return view('index' ,compact('newsPublcations'));
     }
 
     /**

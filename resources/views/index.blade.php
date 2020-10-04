@@ -9,13 +9,18 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Crose - Modern Church Template | Home</title>
+    <title>Syokimau Central</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <style>
+.header{
+    margin-top: 9%;
+}
+    </style>
 
 </head>
 
@@ -27,7 +32,7 @@
     </div>
 <!-- ##### Header Area Start ##### -->
 <header class="header-area">
--
+
 
         <!-- ***** Navbar Area ***** -->
         <div class="crose-main-menu">
@@ -37,7 +42,7 @@
                     <nav class="classy-navbar justify-content-between" id="croseNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="#" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -141,7 +146,7 @@
         <!-- Section Heading -->
         <div class="col-12">
             <div class="section-heading">
-                <h3>Welcome to Syokimau SDA Church</h3>
+                <h3 class="header">Welcome to Syokimau SDA Church</h3>
                 
             </div>
         </div>

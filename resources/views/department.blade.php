@@ -9,13 +9,20 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Crose - Modern Church Template | Events</title>
+    <title>Syokimau Central</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        .wrapper{
+            margin-top: 8%;
+            margin-bottom: 7%;
+        }
+      
+    </style>
 
 </head>
 
@@ -114,8 +121,10 @@
             </div>
         </div>
     </div>
+    {{-- <img class="img" src="img/bg-img/1.jpg"> --}}
     <!-- ##### Breadcrumb Area End ##### -->
             <!-- mt-5 :it is used when you want to have a margin -->
+            <div class="wrapper">
             <div class="container">
                 <?php foreach ($departments as $department){ ?>
             <div class="row mt-5">
@@ -143,7 +152,7 @@
             </div>
           
         <?php } ?>
-            
+    </div>  
        </div>
        <!-- ##### Subscribe Area Start ##### -->
     <section class="subscribe-area">

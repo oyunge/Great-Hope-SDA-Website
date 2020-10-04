@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/about', function () {
-    return view('about');
-});
+// Route::get('/about', function () {
+//     return view('about');
+// });
 // Route::get('/events', function () {
 //     return view('events');
 // });
@@ -25,11 +25,11 @@ Route::get('/about', function () {
 // Route::get('/', function () {
 //     return view('index'); 
 // });
-Route::get('/createDepartment', function(){
-    return view('createDepartment');
+Route::get('/addDepartment', function(){
+    return view('/admin/addDepartment');
     });
-Route::get('/news', function(){
-return view('createNewsPublication');
+Route::get('/addNews', function(){
+return view('/admin/addNewsPublication');
 });
 // Route::get('/departments', function () {
 //     return view('department');
@@ -37,13 +37,22 @@ return view('createNewsPublication');
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/create', function () {
-    return view('createEvent');
+// Route::get('/pastor', function () {
+//     return view('addpastor');
+// });
+Route::get('/addEvent', function () {
+    return view('/admin/addEvent');
 });
-Route::get('/createSermon', function () {
-    return view('createSermons');
+Route::get('/addSermon', function () {
+    return view('/admin/addSermons');
+});
+Route::get('/addInfo', function () {
+    return view('/admin/addinfo');
 });
 
+Route::get('/admin', function () {
+    return view('admin');
+});
 
 //Contact Controller
 Route::post('/contacts', [\App\Http\Controllers\ContactController::class,'postContact']);
@@ -58,8 +67,22 @@ Route::post('/sermon', [\App\Http\Controllers\SermonsController ::class,'store']
 //News Controller
 
 Route::post('/newsPublication', [\App\Http\Controllers\newsPublicationController ::class,'store']);
-Route::get('/newsPublication', [\App\Http\Controllers\newsPublicationController ::class,'index']);
+Route::get('/', [\App\Http\Controllers\newsPublicationController ::class,'index']);
 
 // Department controllers
 Route::post('/departments', [\App\Http\Controllers\departmentsController ::class,'store']);
-Route::get('/departments', [\App\Http\Controllers\departmentsController ::class,'index']);
+Route::get('/departments', [\App\Http\Controllers\departmentsController ::class,'index']); 
+
+// about us controller 
+Route::post('/about', [\App\Http\Controllers\AboutUsController ::class,'store']);
+Route::get('/about', [\App\Http\Controllers\AboutUsController ::class,'index']);
+
+
+
+
+
+
+
+
+
+

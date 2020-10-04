@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Crose - Modern Church Template | Events</title>
+    <title>Syokimau Central</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -56,7 +56,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="/">Home</a></li>
-                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/about">About Us</a></li>
                                     <li><a href="/departments">Departments</a></li>
                                     <li><a href="/events">Events</a></li>
                                     <li><a href="/sermons">Sermons</a></li>
@@ -156,7 +156,7 @@
                         <h2>Events In March 2020</h2>
                     </div>
                 </div>
-
+                <div class="container">
                 <div class="col-12">
                    
                     <?php foreach ($events as $event){ ?>
@@ -164,7 +164,7 @@
                     <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
                         <!-- Thumbnail -->
                         <div class="upcoming-events-thumbnail">
-                            <img src="img/bg-img/23.jpg" alt="">
+                        <img src="/storage/cover_images/{{$event->cover_image}}" alt="" class="img-fluid">
                         </div>
                         <!-- Content -->
                         <div class="upcoming-events-content d-flex flex-wrap align-items-center">
@@ -185,7 +185,7 @@
                     </div>
                 </div>
                 <?php } ?>
-       
+            </div>
               
             
 

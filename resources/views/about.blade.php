@@ -9,13 +9,22 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Crose - Modern Church Template | About</title>
+    <title>Syokimau Central</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <style>
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+}
+    </style>
 
 </head>
 
@@ -123,9 +132,10 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-12 col-lg-5">
                     <div class="about-content">
-                        <h2>Welcome To Syokimau Central SDA</h2>
-                        <p>It’s very important to believe that you’re the one. We aim to take a different approach in reaching out and helping people along the journey. We stress cultural relevancy and utilize all medias and means to communicate the church
-                            message. It’s very important to believe that you’re the one.</p>
+                        <?php foreach ($contents as $content){ ?>
+                        <h2><?php echo $content['title']; ?></h2>
+                        <p><?php echo $content['about']; ?></p>
+                        <?php } ?>
                         <div class="opening-hours-location mt-30 d-flex align-items-center">
                             <!-- Opening Hours -->
                             <div class="opening-hours">
@@ -185,65 +195,32 @@
             </div>
 
             <div class="row">
+                <div class="flex-container">
                 <!-- Team Members Area -->
+                <div>
                 <div class="col-12 col-sm-6 col-lg-3">
+                    <?php foreach ($contents as $content){ ?>
                     <div class="single-team-members text-center mb-100">
-                        <div class="team-thumb" style="background-image: url(img/bg-img/33.jpg);">
+                        {{-- <div class="team-thumb" style="background-image: url(img/bg-img/33.jpg);"> --}}
+                            <div class="team-thumb" style="background-image: url(/storage/cover_images/{{$content->cover_image}});">
+                            
                             <div class="team-social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                             </div>
                         </div>
-                        <h6>Jackson Nash</h6>
-                        <span>Pastor</span>
+                        <h6><?php echo $content['name']; ?></h6>
+                        <span><?php echo $content['position']; ?></span>
                     </div>
+                    </div>
+                    <?php } ?>
                 </div>
+                </div>
+           
 
-                <!-- Team Members Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-members text-center mb-100">
-                        <div class="team-thumb" style="background-image: url(img/bg-img/34.jpg);">
-                            <div class="team-social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <h6>Rucsandra Moisa</h6>
-                        <span>Bishop</span>
-                    </div>
-                </div>
 
-                <!-- Team Members Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-members text-center mb-100">
-                        <div class="team-thumb" style="background-image: url(img/bg-img/35.jpg);">
-                            <div class="team-social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <h6>Ollie Schneider</h6>
-                        <span>Archbishop</span>
-                    </div>
-                </div>
-
-                <!-- Team Members Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-team-members text-center mb-100">
-                        <div class="team-thumb" style="background-image: url(img/bg-img/36.jpg);">
-                            <div class="team-social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                        <h6>Alex Manning</h6>
-                        <span>Pope</span>
-                    </div>
-                </div>
+           
             </div>
         </div>
     </div>
@@ -251,7 +228,7 @@
 
     <!-- ##### Subscribe Area Start ##### -->
 </div>
-    <section class="subscribe-area">
+    {{-- <section class="subscribe-area">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Subscribe Text -->
@@ -272,7 +249,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- ##### Subscribe Area End ##### -->
 
     <footer class="footer-area">

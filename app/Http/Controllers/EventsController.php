@@ -48,38 +48,69 @@ class EventsController extends Controller
   
     public function store(Request $request)
     {
+        $this -> validate($request,[
+            // nullable means optional is not necessary a user to upload an image
+           'cover_image' => 'image|nullable|max:1999',
+           "title" => "required",
+           "location" => "required",
+           "message" => "required",
+           ]);
+                //handle file upload
+       if($request->hasFile('cover_image')){
+        //Get filename with the extension
+        $filenameWithExt = $request->file('cover_image')->getClientOriginalName();
+         //get just filename
+         $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+         //get just ext
+         $extension = $request->file('cover_image')->getClientOriginalExtension();
+         //filename to store
+         $fileNameToStore = $filename.'_'.time().'.'.$extension;
+         //upload image
+         $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+        } else{
+        $fileNameToStore = 'noimage.jpg';
+    }
+   
+       //create post
+       $event = new Event;
+       $event->cover_image = $fileNameToStore;
+       $event->title = $request->input('title');
+       $event->location = $request->input('location');
+       $event->message = $request->input('message');
+       $event->save();
+       return redirect('events');
 
-        $rules = [
-
-            "title" => "required",
-            "location" => "required",
-            "message" => "required",
+        // $rules = [
+        //     'cover_image' => 'image|nullable|max:1999',
+        //     "title" => "required",
+        //     "location" => "required",
+        //     "message" => "required",
             
-        ];
+        // ];
 
-        $validation = $request->validate($rules);
+        // $validation = $request->validate($rules);
 
-        if (!$validation) {
+        // if (!$validation) {
 
-            return route("contact");
+        //     return route("contact");
 
-        } else {
+        // } else {
 
 
-            $event = new Event();
-            $event->title = $request->title;
-            $event->location = $request->location;
-            $event->message = $request->message;
+        //     $event = new Event();
+        //     $event->title = $request->title;
+        //     $event->location = $request->location;
+        //     $event->message = $request->message;
            
 
-            if ($event->save()) {
+        //     if ($event->save()) {
 
-                return view("contact");
+        //         return view("contact");
 
-            }
+        //     }
 
 
-        }
+        // }
 
     }
 
