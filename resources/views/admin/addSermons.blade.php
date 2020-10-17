@@ -96,6 +96,15 @@
                     </div>
                 </div>
                 </div>
+                <p>Add an Audio</p>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="form-group">
+                            
+                            <input type="file" class="form-control" id="audio" name="audio"  placeholder="">
+                        </div>
+                    </div>
+                    </div>
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <div class="form-group">

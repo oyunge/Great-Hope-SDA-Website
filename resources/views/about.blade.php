@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="style.css">
     <style>
 
-.flex-container {
+/* .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   justify-content: space-between;
-}
+} */
     </style>
 
 </head>

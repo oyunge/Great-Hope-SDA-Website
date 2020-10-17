@@ -43,6 +43,7 @@ class SermonsController extends Controller
         $this -> validate($request,[
             // nullable means optional is not necessary a user to upload an image
            'cover_image' => 'image|nullable|max:1999',
+           'featured_mp3'=>'required|audio',
            "title" => "required",
            "sermonFrom" => "required",
             "categories" => "required",
@@ -62,9 +63,31 @@ class SermonsController extends Controller
         } else{
         $fileNameToStore = 'noimage.jpg';
     }
+    //audio
+    if ( $request->hasFile('featured_mp3') ) {
+        // The file
+        $music_file = $request->file('featured_mp3');
+    
+        // This will return "mp3" not the file name
+        $filename = $request->file('featured_mp3')->getClientOriginalExtension();
+    
+        // This will return /audio/mp3
+        $location = public_path('audio/' . $filename);
+    
+        // This will move the file to /public/audio/mp3/
+        // and save it as "mp3" (not what you want)
+        // example: /public/audio/mp3/mp3 (without extension)
+        $music_file->move($location,$filename);
+    
+        // mp3 row in your column will just say "mp3"
+        // since the $filename above is just an extension of the file
+      
+    }
            //create post
            $sermon = new Sermon;
            $sermon->cover_image = $fileNameToStore;
+           $sermon->featured_mp3 = $filename;
+         
            $sermon->title = $request->input('title');
            $sermon->sermonFrom = $request->input('sermonFrom');
            $sermon->categories = $request->input('categories');
