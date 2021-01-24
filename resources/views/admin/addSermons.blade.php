@@ -101,10 +101,19 @@
                     <div class="col-12 col-lg-4">
                         <div class="form-group">
                             
-                            <input type="file" class="form-control" id="audio" name="audio"  placeholder="">
+                            <input type="file" class="form-control" id="audio" name="featured_mp3"  placeholder="">
                         </div>
                     </div>
                     </div>
+                    <p>Add a pdf doc</p>
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="form-group">
+                                
+                                <input type="file" class="form-control" id="audio" name="pdf_doc"  placeholder="">
+                            </div>
+                        </div>
+                        </div>
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <div class="form-group">
@@ -128,6 +137,9 @@
                 <div class="col-12 text-center">
                     <button type="submit" class="btn crose-btn mt-15" value="" >Submit Now</button>
                 </div>
+                <div class="col-12 text-center">
+                <a href="" class="btn btn-primary">Edit</a>
+            </div>
             </div>
         </form>
 </div>

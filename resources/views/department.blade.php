@@ -21,6 +21,10 @@
             margin-top: 8%;
             margin-bottom: 7%;
         }
+        center {
+  width: 100%;
+  height: auto;
+}
       
     </style>
 
@@ -113,7 +117,7 @@
                 <div class="col-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Event</li>
                         </ol>
                     </nav>
@@ -129,7 +133,7 @@
                 <?php foreach ($departments as $department){ ?>
             <div class="row mt-5">
                 <div class="col-md-4">
-                    <img src="/storage/cover_images/{{$department->cover_image}}" 
+                    <img class ="center" src="/storage/cover_images/{{$department->cover_image}}" 
                     class="img-fluid">
                 </div>
                 <div class="col-md-8">
@@ -143,11 +147,11 @@
                           <p style="text-align: justify"><?php echo $department['message'];?></p>
                        </div>
                     </div>
-                    <div class="row">
+                    {{-- <div class="row">
                         <div class="col-md-4">
                             <button class="btn btn-primary">Read More</button>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
           
@@ -199,13 +203,13 @@
                             <h5 class="widget-title">Quick Link</h5>
                             <nav class="footer-menu">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a></li>
+                                    <li><a href="/"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a></li>
                                     
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Event</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Gallery</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sermons</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a></li>
+                                    <li><a href="/about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>
+                                    <li><a href="/events"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Event</a></li>
+                                    
+                                    <li><a href="/sermons"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sermons</a></li>
+                                    <li><a href="/contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a></li>
                                   
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Donate</a></li>
                                 </ul>

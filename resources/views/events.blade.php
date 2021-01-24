@@ -104,7 +104,7 @@
                 <div class="col-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Event</li>
                         </ol>
                     </nav>
@@ -122,24 +122,24 @@
                 <!-- Event Search Form -->
                 <div class="col-12">
                     <div class="event-search-form mb-50">
-                        <form action="#" method="get">
+                        <form action="search" method="get">
                             <div class="row align-items-end">
                                 <div class="col-12 col-md">
                                     <div class="form-group mb-0">
                                         <label for="eventDate">Event In</label>
-                                        <input type="date" class="form-control" id="eventDate" placeholder="Event In">
+                                        <input type="date" class="form-control" id="eventDate" name="created_at" placeholder="Event In">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md">
                                     <div class="form-group mb-0">
                                         <label for="eventLocation">Near</label>
-                                        <input type="text" class="form-control" id="eventLocation" placeholder="Location">
+                                        <input type="text" class="form-control" id="eventLocation" name="location" placeholder="Location">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md">
                                     <div class="form-group mb-0">
                                         <label for="eventKeyword">Keyword</label>
-                                        <input type="text" class="form-control" id="eventKeyword" placeholder="Typing Keyword">
+                                        <input type="text" class="form-control" id="eventKeyword" name="title" placeholder="Typing Keyword">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-3 col-lg-2">
@@ -147,6 +147,7 @@
                                 </div>
                             </div>
                         </form>
+                       
                     </div>
                 </div>
 
@@ -251,13 +252,13 @@
                             <h5 class="widget-title">Quick Link</h5>
                             <nav class="footer-menu">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a></li>
+                                    <li><a href="/"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a></li>
                                     
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Event</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Gallery</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sermons</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a></li>
+                                    <li><a href="/about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>
+                                    <li><a href="/events"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Event</a></li>
+                                    
+                                    <li><a href="/sermons"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sermons</a></li>
+                                    <li><a href="/contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a></li>
                                   
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Donate</a></li>
                                 </ul>

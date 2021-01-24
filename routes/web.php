@@ -58,8 +58,10 @@ Route::get('/admin', function () {
 Route::post('/contacts', [\App\Http\Controllers\ContactController::class,'postContact']);
 
 //Events Controller
-Route::post('/events', [\App\Http\Controllers\EventsController::class,'store']);
+Route::post('/postEvents', [\App\Http\Controllers\EventsController::class,'store']);
 Route::get('/events', [\App\Http\Controllers\EventsController::class,'index']);
+Route::get('/search', [\App\Http\Controllers\EventsController::class,'search']);
+
 //Sermons Controller
 
 Route::get('/sermons', [\App\Http\Controllers\SermonsController::class,'index']);
@@ -79,8 +81,12 @@ Route::get('/about', [\App\Http\Controllers\AboutUsController ::class,'index']);
 
 
 
-
-
+Route::get('/publication', function () {
+    return view('newsPublication');
+});
+Route::get('/publications', function () {
+    return view('newsPublications');
+});
 
 
 

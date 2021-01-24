@@ -194,29 +194,43 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="flex-container">
+            <div class="">
+                <div class="">
                 <!-- Team Members Area -->
-                <div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <?php foreach ($contents as $content){ ?>
-                    <div class="single-team-members text-center mb-100">
-                        {{-- <div class="team-thumb" style="background-image: url(img/bg-img/33.jpg);"> --}}
-                            <div class="team-thumb" style="background-image: url(/storage/cover_images/{{$content->cover_image}});">
-                            
-                            <div class="team-social-info">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </div>
+                    <div class="f-container">
+               
+                        <div class="f-item">
+                                <?php foreach ($contents as $content){ ?>
+                                <div class="single-team-members text-center mb-100">
+                                    {{-- <div class="team-thumb" style="background-image: url(img/bg-img/33.jpg);"> --}}
+                                            <div class="team-thumb" style="background-image: url(/storage/cover_images/{{$content->cover_image}});">
+                                                
+                                                <div class="team-social-info">
+                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        <h6><?php echo $content['name']; ?></h6>
+                                        <span><?php echo $content['position']; ?></span>
+
+                                </div>
                         </div>
-                        <h6><?php echo $content['name']; ?></h6>
-                        <span><?php echo $content['position']; ?></span>
+
+                            <?php } ?>
                     </div>
-                    </div>
-                    <?php } ?>
-                </div>
-                </div>
+            </div>
+
+            <style>
+                .f-container{
+                    display: flex;
+                }
+
+                .f-item{
+                    margin-right: 50px;
+
+                }
+            </style>
            
 
 
@@ -272,13 +286,13 @@
                             <h5 class="widget-title">Quick Link</h5>
                             <nav class="footer-menu">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a></li>
+                                    <li><a href="/"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a></li>
                                     
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Event</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Gallery</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sermons</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a></li>
+                                    <li><a href="/about"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>
+                                    <li><a href="/events"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Event</a></li>
+                                    
+                                    <li><a href="/sermons"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sermons</a></li>
+                                    <li><a href="/contact"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a></li>
                                   
                                     <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Donate</a></li>
                                 </ul>

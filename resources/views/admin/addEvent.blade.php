@@ -88,7 +88,7 @@
         </div>
         <div id="layoutSidenav_content">
     <div class="container">
-        <form action="/events" method="post" enctype="multipart/form-data">
+        <form action="/postEvents" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="row">
                 <div class="col-12 col-lg-4">

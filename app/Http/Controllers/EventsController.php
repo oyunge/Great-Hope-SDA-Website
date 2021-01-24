@@ -10,11 +10,32 @@ use Illuminate\View\View;
 use DB;
 class EventsController extends Controller
 {
+    public function search(Request $Request ){
+        $Request->validate([
+            
+            'created_at' => 'required',
+            'location' => 'required',
+            'title' => 'required'
+        ]);
+        $created_at = $Request->input('created_at');
+        $location = $Request->input('location');
+        $title = $Request->input('title');
+
+        
+
+        // dd($query);
+        // $events = Event::Search($query)->paginate(6);
+        $events = Event::where('created_at', 'like', "%$created_at%")->orwhere('location','like', "%$location%")->orwhere('title','like', "%$title%")->paginate(6);
+        return view('/events', compact('events'));
+            }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+
+// 
+
     public function index()
     {
        

@@ -197,7 +197,8 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="single-latest-sermons mb-100">
                         <div class="sermons-thumbnail">
-                            <img src="/storage/cover_images/{{$sermon->cover_image}}" alt="" class="img-fluid">
+                            <img src="/storage/cover_images/{{$sermon->cover_image}} " alt="" class="img-fluid">
+                           
                             <!-- Date -->
                             <div class="sermons-date">
                                 <h6><span>10</span>MAR</h6>
@@ -206,15 +207,19 @@
                         <div class="sermons-content">
                             <div class="sermons-cata">
                                 <a href="#" data-toggle="tooltip" data-placement="top" title="Video"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="top" title="Audio"><i class="fa fa-headphones" aria-hidden="true"><?php echo $sermon['featured_mp3']; ?></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="top" title="Docs"><i class="fa fa-file" aria-hidden="true"></i></a>
+                                <a href="/storage/featured_mp3s/{{$sermon->featured_mp3}}" data-toggle="tooltip" data-placement="top" title="Audio"><i class="fa fa-headphones" aria-hidden="true">
+                                        
+                                   
+                                    
+                                </i></a>
+                                <a href="/storage/pdf_docs/{{$sermon->pdf_doc}}" data-toggle="tooltip" data-placement="top" title="Docs"><i class="fa fa-file" aria-hidden="true">
+                                </i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
                             </div>
                             <h4><?php echo $sermon['title']; ?></h4>
                             <div class="sermons-meta-data">
                                 <p><i class="fa fa-user" aria-hidden="true"></i> Sermon From: <span><?php echo $sermon['sermonFrom']; ?></span></p>
                                 <p><i class="fa fa-tag" aria-hidden="true"></i> Categories: <span><?php echo $sermon['categories']; ?></span></p>
-                                <p><i class="fa fa-clock-o" aria-hidden="true"></i><span>{{$sermon ->created_at}}</span></p>
                             </div>
                         </div>
                     </div>
